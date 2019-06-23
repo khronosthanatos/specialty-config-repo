@@ -1,0 +1,6 @@
+spring:
+  # 安全配置
+  security:
+    user:
+      name: specialty     
+      password: specialty 
