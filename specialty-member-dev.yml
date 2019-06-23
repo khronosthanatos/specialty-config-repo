@@ -1,8 +1,8 @@
 security:
   oauth2:
     client:
-      client-id: specialty
-      client-secret: specialty
+      client-id: ENC(imENTO7M8bLO38LFSIxnzw==)
+      client-secret: ENC(i3cDFhs26sa2Ucrfz2hnQw==)
       scope: server
 
 # 数据源
