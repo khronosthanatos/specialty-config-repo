@@ -15,8 +15,8 @@ spring:
             # 前端密码解密
             - PasswordDecoderFilter
         #UPMS 模块
-        - id: specialty-specialty
-          uri: lb://specialty-specialty
+        - id: specialty-upms
+          uri: lb://specialty-upms
           predicates:
             - Path=/admin/**
           filters:
@@ -31,12 +31,17 @@ spring:
               args:
                 name: default
                 fallbackUri: 'forward:/fallback'
+        # 代码生成模块
+        - id: specialty-codegen
+          uri: lb://specialty-codegen
+          predicates:
+            - Path=/gen/**
 
 
 security:
   encode:
     # 前端密码密钥，必须16位
-    key: 'showtimspecialty'
+    key: 'kurtcobain,jonny'
 
 # 不校验验证码终端
 ignore:

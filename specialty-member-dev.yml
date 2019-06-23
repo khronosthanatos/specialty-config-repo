@@ -12,7 +12,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: $Clannad27
-    url: jdbc:mysql://specialty-db-mysql:3306/SpecialtyDB?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://specialty-db-mysql:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
 
 # 直接放行URL
 ignore:
