@@ -14,8 +14,6 @@ spring:
             - ValidateCodeGatewayFilter
             # 前端密码解密
             - PasswordDecoderFilter
-            - SwaggerHeaderFilter
-            - StripPrefix=1
         #UPMS 模块
         - id: specialty-member
           uri: lb://specialty-member
