@@ -12,6 +12,8 @@ spring:
           filters:
             # 验证码处理
             - ValidateCodeGatewayFilter
+            # Swagger集成
+
             # 前端密码解密
             - PasswordDecoderFilter
         #UPMS 模块
@@ -31,6 +33,8 @@ spring:
               args:
                 name: default
                 fallbackUri: 'forward:/fallback'
+            - SwaggerHeaderFilter
+            - StripPrefix=1
         # 代码生成模块
         - id: specialty-codegen
           uri: lb://specialty-codegen
