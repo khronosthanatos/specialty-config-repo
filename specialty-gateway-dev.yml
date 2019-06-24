@@ -33,8 +33,6 @@ spring:
               args:
                 name: default
                 fallbackUri: 'forward:/fallback'
-            - SwaggerHeaderFilter
-            - StripPrefix=1
         # 代码生成模块
         - id: specialty-codegen
           uri: lb://specialty-codegen
