@@ -20,3 +20,10 @@ ignore:
     - /actuator/**
     - /user/info/*
     - /log/**
+    - /actuator/**
+    - /token/**
+    - /druid/**
+    - /swagger-ui.html
+    - /swagger-resources/**
+    - /v2/api-docs
+    - /api/applications

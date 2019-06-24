@@ -21,3 +21,10 @@ spring:
 ignore:
   urls:
     - /actuator/**
+    - /token/**
+    - /druid/**
+    - /swagger-ui.html
+    - /swagger-resources/**
+    - /v2/api-docs
+    - /api/applications
+
