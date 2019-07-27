@@ -37,7 +37,7 @@ spring:
         - id: specialty-order
           uri: lb://specialty-order
           predicates:
-            - Path=/admin/**
+            - Path=/order/**
           filters:
             # 限流配置
             - name: RequestRateLimiter
@@ -54,7 +54,7 @@ spring:
         - id: specialty-item
           uri: lb://specialty-item
           predicates:
-            - Path=/admin/**
+            - Path=/product/**
           filters:
             # 限流配置
             - name: RequestRateLimiter
